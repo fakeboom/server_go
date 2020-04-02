@@ -16,9 +16,9 @@ func handleGet(writer http.ResponseWriter, request *http.Request) {
 func main() {
 	http.HandleFunc("/hello", handleGet)
 
-	fmt.Println("Running at port 3000 ...")
+	fmt.Println("Running at port 80 ...")
 
-	err := http.ListenAndServe(":3000", nil)
+	err := http.ListenAndServe(":80", nil)
 
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err.Error())
