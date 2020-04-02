@@ -18,7 +18,7 @@ func main() {
 
 	fmt.Println("Running at port 80 ...")
 
-	err := http.ListenAndServe("fakeboom.club:80", nil)
+	err := http.ListenAndServe(":80", nil)
 
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err.Error())
